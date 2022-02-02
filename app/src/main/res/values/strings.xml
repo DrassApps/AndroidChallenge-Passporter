@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Challenge</string>
+
+    <!-- MAIN VIEW -->
+    <string name="mainView_tvToolbar">GitHub Repos</string>
+    <string name="mainView_loadingHint">Cargando repositorios…</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_whiteBackground"
+        tools:context=".ui.main.view.MainViewActivity">
+
+        <include
+            android:id="@+id/tb"
+            layout="@layout/app_toolbar"
+            app:toolbarTitle="@{@string/mainView_tvToolbar}" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/githubRepos_rv"
+            style="@style/RecyclerView.Vertical"
+            android:layout_below="@id/tb"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_repository" />
+
+    </RelativeLayout>
+
+</layout>

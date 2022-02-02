@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="toolbarTitle"
+            type="String" />
+    </data>
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/Toolbar">
+
+        <TextView
+            android:id="@+id/tbTitle"
+            style="@style/ToolbarTv"
+            android:layout_gravity="center"
+            android:text="@{toolbarTitle}" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+</layout>

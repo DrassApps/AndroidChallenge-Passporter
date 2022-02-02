@@ -1,15 +1,22 @@
 package com.drassapps.androidchallenge.ui.main.viewmodel
 
 import androidx.lifecycle.*
-import dagger.hilt.android.lifecycle.HiltViewModel
+import com.drassapps.androidchallenge.data.domain.GitHubRepository
+import com.drassapps.androidchallenge.data.domain.RepoModel
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class MainViewModel @Inject constructor() : ViewModel() {
+class MainViewModel (
+    private val repository: GitHubRepository
+) : ViewModel() {
 
-    fun onCreate() {
-        viewModelScope.launch { }
+    private var _currentPage = 1
+    val repositories: Flow<List<RepoModel>> get() = repository.getSavedRepositories()
+
+    init { viewModelScope.launch { getRepositories() } }
+
+    suspend fun getRepositories() {
+        repository.requireNewPage(_currentPage)
+        _currentPage += 1
     }
-
 }
