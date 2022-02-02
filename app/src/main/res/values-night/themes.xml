@@ -1,0 +1,86 @@
+<resources>
+    <style name="Theme.AndroidChallenge" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/c_white</item>
+        <item name="colorPrimaryDark">@color/c_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_height">70sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/c_black</item>
+        <item name="android:background">@color/c_white</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="ToolbarTv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/c_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:layout_margin">12sp</item>
+        <item name="android:background">@color/c_whiteBackground</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="RecyclerView.Vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_white</item>
+    </style>
+
+    <style name="TextView.Bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">8sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextView.Repository">
+        <item name="android:textColor">@color/c_black</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_marginStart">25sp</item>
+        <item name="android:layout_marginEnd">8sp</item>
+    </style>
+
+    <style name="TextView.Repository.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">16sp</item>
+        <item name="android:layout_marginBottom">4sp</item>
+    </style>
+
+    <style name="TextView.Repository.SubTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">4sp</item>
+        <item name="android:layout_marginBottom">8sp</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_width">25sp</item>
+        <item name="android:layout_height">25sp</item>
+        <item name="android:layout_margin">8sp</item>
+    </style>
+
+    <style name="CardViewImage">
+        <item name="android:layout_width">70sp</item>
+        <item name="android:layout_height">70sp</item>
+        <item name="android:layout_marginStart">16sp</item>
+        <item name="android:layout_marginTop">8sp</item>
+        <item name="android:layout_marginBottom">8sp</item>
+    </style>
+
+</resources>
