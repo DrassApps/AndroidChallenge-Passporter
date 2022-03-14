@@ -42,7 +42,11 @@ Hello Android Team 👋, here is my code for the challenge. For build this app I
 ---
 
 ### Disclaimer
-The app won't compile unless the developer offer the API_KEY for local testing. I added a functional debug.apk at the repository root, however if you want test the app locally, comment line *27* and *22* at *Network* object **(client configuration)** and check the remaningCalls `curl -I https://api.github.com/users/DrassApps`
+The app won't compile unless the developer offer the API_KEY for local testing. I added a functional debug.apk at the repository root, however if you want test the app locally, comment:
+
+ - line *27* and *22* at *Network* object **(client configuration)**
+ - line *21* at *build.gradle* **(api_key)**
+ - check the remaningCalls `curl -I https://api.github.com/users/DrassApps`
 
 The code doesn't handle backend errors or user non-happy flows like try to get the backend data without internet connection, it may produce a crash
 
